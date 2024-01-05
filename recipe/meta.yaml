@@ -1,6 +1,6 @@
 {% set name = "httpagentparser" %}
-{% set version = "1.8.2" %}
-{% set sha256 = "77e1d03fb40f1c34afa2d210ed7667dddb5b601efa154513cd08713d17a3aa6c" %}
+{% set version = "1.9.5" %}
+{% set sha256 = "53cefd9d65990f6fe59c0378cad8ea1b9df8f770d2e8bd9d8762edae033be80a" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,6 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  noarch: python
   number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
@@ -27,6 +26,10 @@ requirements:
 test:
   imports:
     - httpagentparser
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: http://shon.github.com/httpagentparser
