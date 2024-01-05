@@ -38,10 +38,13 @@ test:
 
 about:
   home: http://shon.github.com/httpagentparser
-  license: MIT
   summary: Extracts OS Browser etc information from http user agent string
+  description: Extracts OS Browser etc information from http user agent string
+  license: MIT
   license_family: MIT
-  # license_file: LICENSE.txt  # https://github.com/shon/httpagentparser/pull/76
+  license_file: LICENSE.txt
+  doc_url: http://shon.github.com/httpagentparser
+  dev_url: http://shon.github.com/httpagentparser
 
 extra:
   recipe-maintainers:
