@@ -19,8 +19,12 @@ build:
 
 requirements:
   build:
+    - git  # [not win]
+  host:
     - python
     - pip
+    - setuptools
+    - wheel
   run:
     - python
 
